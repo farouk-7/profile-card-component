@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+    <div class="front-card">
+        <div class="image">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+        <div class="cardNumber">
+            <h3 id="card-num">0000 0000 0000 0000</h3>
+        </div>
+        <div class="info">
+            <div id="name">JANE APPLESEED</div>
+            <div class="expire">
+                <div class="month">00</div>/
+                <div class="year">00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-card">
+        <div class="black"></div>
+        <div class="box"></div>
+        <div class="cvv">000</div>
+
+    </div>
+    </div>
+
+    <div class="filled-info">
+        <div class="cardholder">
+            <h5>CARDHOLDER NAME</h5>
+            <input type="text" placeholder="e.g. Jane Appleseed" id="name-input">
+            <h5 class="name-error"></h5>
+        </div>
+        <div class="cardnumber">
+            <h5>CARD NUMBER</h5>
+            <input type="tel" placeholder="e.g. 1234 5678 9123 0000" id="number-input">
+            <h5 class="number-error"></h5>
+        </div>
+        <div class="expiring-cvv-date">
+            <div class="exp-date">
+                <h5>EXP. DATE (MM/YY)</h5>
+                <div class="exp-input">
+                    <input type="text" placeholder="MM" id="month-input">
+                    <input type="text" placeholder="YY" id="year-input">
+                </div>
+                
+            </div>
+            <div class="cvv-input">
+                <h5>cvv</h5>
+                <input type="text" placeholder="e.g. 123" id="cvv-input">
+                <div class="cvv-error"></div>
+            </div>
+        </div>
+        <div class="monthyear-error"></div>
+
+        <div id="submit">
+            <input type="button" value="Confirm" id="submit-input">
+        </div>
+
+
+    </div>
+
+    <script src="text.js"></script>
+</body>
+</html>

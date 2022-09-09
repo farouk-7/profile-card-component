@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+    width: auto;
+    background:linear-gradient(
+        to right,
+        hsl(249, 99%, 64%),hsl(278, 94%, 30%)0%,
+        hsl(249, 99%, 64%),hsl(278, 94%, 30%)30%,
+        rgb(185, 181, 181) 30%,
+        white 100%
+
+    ) no-repeat;
+    display: flex;
+    padding: 100px;
+    padding-left: 150px;
+    
+}
+.front-card{
+    position: relative;
+    height: 280px;
+    width: 500px;
+    border: 1px solid none;
+    border-radius: 10px;
+    background-color: tomato;
+    padding-left: 50px;
+}
+.image{
+    display: flex;
+    align-items: center;
+}
+.circle1{
+    margin-top:20px;
+    height: 70px;
+    width: 60px;
+    background-color: #fff;
+    border: 1px solid rgba(233, 227, 233, 0.933);
+    clip-path: circle();
+}
+.circle2{
+    margin-top:20px;
+    height: 30px;
+    width: 60px;
+    background-color: whitesmoke;
+    border: 1px solid rgba(233, 227, 233, 0.933);
+    clip-path: circle();
+    
+
+}
+.expire{
+    display: flex;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.cardNumber{
+    position: absolute;
+    top: 180px;
+    color: whitesmoke;
+}
+.cardNumber h3{
+    font-family: 'Space Grotesk' ;
+    font-weight: 500px;
+    letter-spacing: 5px;
+    font-size: 27px;
+}
+.info{
+    top: 240px;
+    width: 400px;
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    
+}
+#name{
+    letter-spacing: 2px;
+}
+/* font-family: 'Space Grotesk', sans-serif; */
+.back-card{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    height: 280px;
+    width: 500px;
+    border: 1px solid none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    
+}
+.black{
+    position: absolute;
+    height: 60px;
+    margin-top: 30px;
+    width: 100%;
+    border: 1px solid #333;
+    background-color: #333;   
+}
+.box{
+    position: absolute;
+    height: 40px;
+    background-color: rgb(146, 141, 141);
+    top: 50%;
+    width: 80%;
+    margin-left:10%;
+    border-radius: 5px;
+    
+}
+.cvv{
+    position:absolute;
+    top: 150px;
+    margin-left: 400px;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px; 
+}
+.filled-info{
+   padding-left: 500px;
+   padding-top: 100px;
+}
+.filled-info h5{
+    font-family: 'Space Grotesk', sans-serif;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    color: rgb(74, 70, 70);
+}
+#name-input, #number-input{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 5px;
+    outline: none;
+    margin-bottom: 5px;
+    border:1px solid rgb(176, 170, 170) ;
+    font-size: 18px;
+    font-family:'Space Grotesk', sans-serif ;
+}
+.name-error, .number-error{
+    margin-bottom: 10px;
+    
+}
+.filled-info ::placeholder{
+    font-size: 20px;
+    font-family:'Space Grotesk', sans-serif ;
+    color: rgb(200, 193, 193);
+}
+
+.expiring-cvv-date{
+    display: flex;
+    gap: 20px;
+}
+#month-input, #year-input{
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    border: 1px solid rgb(176, 170, 170);
+    padding-left: 15px;
+    outline: none;
+}
+.monthyear-error{
+    padding-top: 5px;
+    color: red;
+    font-family:'Space Grotesk', sans-serif ;
+}
+.exp-input{
+    display:flex;
+    gap: 15px;
+}
+#cvv-input{
+    width: 221px;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(176, 170, 170);
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    padding-left: 5px;
+}
+.cvv-error{
+    color: red;
+    padding-top: 5px;
+    font-family:'Space Grotesk', sans-serif  ;
+    padding-left: 30px;
+}
+#submit-input{
+    width: 400px;
+    margin-top: 50px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: rgb(36, 8, 53);
+    color: white;
+    font-size: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+}
